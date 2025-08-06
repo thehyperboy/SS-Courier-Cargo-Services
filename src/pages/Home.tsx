@@ -102,113 +102,207 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section 
-        className="relative min-h-screen flex items-center justify-center bg-cover bg-center overflow-hidden"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      >
-        <div className="absolute inset-0 bg-gradient-hero"></div>
-        
-        {/* Floating Elements */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-20 left-10 w-20 h-20 bg-white/5 rounded-full animate-float" style={{ animationDelay: '0s' }}></div>
-          <div className="absolute top-40 right-20 w-32 h-32 bg-white/3 rounded-full animate-float" style={{ animationDelay: '1s' }}></div>
-          <div className="absolute bottom-40 left-20 w-16 h-16 bg-white/5 rounded-full animate-float" style={{ animationDelay: '2s' }}></div>
+      <section className="relative min-h-screen bg-gradient-to-br from-primary via-primary-glow to-primary overflow-hidden">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-20 left-20 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-20 w-80 h-80 bg-accent/10 rounded-full blur-2xl"></div>
         </div>
 
-        <div className="relative z-10 text-center max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="animate-slide-up">
-            <div className="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full mb-6 text-white/90 text-sm font-medium">
-              <CheckCircle className="w-4 h-4 mr-2 text-accent" />
-              24+ Years of Trusted Service Since 1996
-            </div>
-          </div>
-          
-          <h1 className="text-6xl md:text-8xl font-bold text-white mb-8 animate-slide-up font-poppins" style={{ animationDelay: '0.1s' }}>
-            Delivering Fast.
-            <br />
-            <span className="text-gradient-accent">Anywhere. Anytime.</span>
-          </h1>
-          
-          <p className="text-xl md:text-2xl text-white/90 mb-6 animate-slide-up max-w-4xl mx-auto leading-relaxed" style={{ animationDelay: '0.2s' }}>
-            Professional courier and cargo services with unmatched reliability.
-            <br />
-            Your trusted partner for domestic and international shipping solutions.
-          </p>
+        <div className="relative z-10 flex items-center min-h-screen">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Left Content */}
+            <div className="text-left animate-slide-up">
+              <div className="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full mb-6 text-white/90 text-sm font-medium">
+                <CheckCircle className="w-4 h-4 mr-2 text-accent" />
+                SS Courier & Cargo Services
+              </div>
+              
+              <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 font-poppins leading-tight">
+                Welcome To
+                <br />
+                <span className="text-accent">SS Courier</span>
+                <br />
+                <span className="text-3xl md:text-4xl font-normal text-white/90">Transport Services</span>
+              </h1>
+              
+              <p className="text-xl text-white/80 mb-8 leading-relaxed max-w-lg">
+                Take your business to the next level with SS Courier's new business management tools. 
+                Logica will open a new horizon for us.
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-4 mb-12">
+                <Button asChild size="lg" className="bg-accent hover:bg-accent-glow text-white text-lg px-8 py-4 rounded-xl">
+                  <Link to="/contact">
+                    Contact Logistics <ArrowRight className="ml-2 w-5 h-5" />
+                  </Link>
+                </Button>
+                <Button asChild size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 text-lg px-8 py-4 rounded-xl">
+                  <Link to="/track">Track Package</Link>
+                </Button>
+              </div>
 
-          <div className="flex items-center justify-center gap-8 mb-8 animate-slide-up" style={{ animationDelay: '0.3s' }}>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-white">24-48</div>
-              <div className="text-white/70 text-sm">Hours Delivery</div>
+              {/* Stats */}
+              <div className="grid grid-cols-3 gap-6 text-white">
+                <div className="text-center">
+                  <div className="text-2xl font-bold">24+</div>
+                  <div className="text-white/70 text-sm">Years Experience</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold">500+</div>
+                  <div className="text-white/70 text-sm">Happy Clients</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold">24/7</div>
+                  <div className="text-white/70 text-sm">Support</div>
+                </div>
+              </div>
             </div>
-            <div className="w-px h-12 bg-white/30"></div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-white">100+</div>
-              <div className="text-white/70 text-sm">Cities Covered</div>
-            </div>
-            <div className="w-px h-12 bg-white/30"></div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-white">24/7</div>
-              <div className="text-white/70 text-sm">Support</div>
-            </div>
-          </div>
-          
-          <div className="flex flex-col sm:flex-row gap-6 justify-center animate-slide-up" style={{ animationDelay: '0.4s' }}>
-            <Button asChild size="lg" className="btn-hero text-lg px-10 py-5 text-xl">
-              <Link to="/book">
-                Book Pickup <ArrowRight className="ml-3 w-6 h-6" />
-              </Link>
-            </Button>
-            <Button asChild size="lg" variant="outline" className="glassmorphism text-white hover:bg-white/20 text-lg px-10 py-5 text-xl">
-              <Link to="/track">Track Shipment</Link>
-            </Button>
-          </div>
 
-          {/* Quick Actions */}
-          <div className="mt-12 animate-slide-up" style={{ animationDelay: '0.5s' }}>
-            <p className="text-white/70 mb-4">Need immediate assistance?</p>
-            <div className="flex justify-center gap-4">
-              <a href="tel:+919876543210" className="inline-flex items-center px-6 py-3 glassmorphism text-white rounded-xl hover:bg-white/20 transition-all">
-                <span className="mr-2">📞</span> Call Now
-              </a>
-              <a href="https://wa.me/919876543210" className="inline-flex items-center px-6 py-3 bg-green-500/20 backdrop-blur-sm border border-green-400/30 text-white rounded-xl hover:bg-green-500/30 transition-all">
-                <span className="mr-2">💬</span> WhatsApp
-              </a>
+            {/* Right Content - Truck Image */}
+            <div className="relative animate-slide-up" style={{ animationDelay: '0.2s' }}>
+              <div className="relative">
+                <img 
+                  src={heroImage} 
+                  alt="Courier truck" 
+                  className="w-full h-auto object-contain"
+                />
+                {/* Floating boxes effect */}
+                <div className="absolute -top-4 -right-4 w-16 h-16 bg-accent/20 rounded-lg animate-float" style={{ animationDelay: '0s' }}></div>
+                <div className="absolute top-1/4 -left-6 w-12 h-12 bg-white/10 rounded-lg animate-float" style={{ animationDelay: '1s' }}></div>
+                <div className="absolute bottom-1/4 right-1/4 w-8 h-8 bg-accent/30 rounded-lg animate-float" style={{ animationDelay: '2s' }}></div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Services Section */}
-      <section className="py-20 bg-background">
+      {/* Partner Logos Section */}
+      <section className="py-12 bg-background border-b border-border/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gradient-primary mb-4 font-poppins">Our Services</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Comprehensive shipping solutions tailored to meet all your delivery needs
-            </p>
+          <div className="text-center mb-8">
+            <p className="text-muted-foreground">Trusted by leading companies</p>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <Link
-                key={service.title}
-                to={service.link}
-                className="card-service group animate-slide-up"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="flex items-center space-x-4 mb-4">
-                  <div className="flex items-center justify-center w-12 h-12 bg-gradient-primary rounded-lg group-hover:scale-110 transition-transform">
-                    <service.icon className="w-6 h-6 text-white" />
-                  </div>
-                  <h3 className="text-xl font-semibold text-foreground">{service.title}</h3>
-                </div>
-                <p className="text-muted-foreground mb-4">{service.description}</p>
-                <div className="flex items-center text-primary group-hover:text-accent transition-colors">
-                  <span className="font-medium">Learn More</span>
-                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </div>
-              </Link>
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-8 items-center opacity-60">
+            {/* Placeholder partner logos */}
+            {[1, 2, 3, 4, 5].map((i) => (
+              <div key={i} className="flex items-center justify-center h-16 bg-muted/30 rounded-lg">
+                <span className="text-muted-foreground font-medium text-sm">Partner {i}</span>
+              </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Main Features Section */}
+      <section className="py-20 bg-secondary/20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            {/* Left Content */}
+            <div className="animate-slide-up">
+              <div className="inline-flex items-center px-4 py-2 bg-accent/10 text-accent rounded-full mb-6 text-sm font-medium">
+                Why Choose Us
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 font-poppins">
+                We'll keep your items
+                <br />
+                <span className="text-accent">damage-free</span>
+              </h2>
+              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+                Logisca AI freight service deliver the knowledge & opportunity to optimize every mile on every lane. 
+                Get full-service Truckload services provide the options you need to manage costs by combining our technology intelligence.
+              </p>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-1">International Shipping</h4>
+                    <p className="text-sm text-muted-foreground">Global delivery solutions</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-1">Container Freight</h4>
+                    <p className="text-sm text-muted-foreground">Secure container transport</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-1">Express Product Shipping</h4>
+                    <p className="text-sm text-muted-foreground">Fast delivery service</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-1">Intermodal Shipping</h4>
+                    <p className="text-sm text-muted-foreground">Multi-mode transport</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-1">Hot Shot Trucking</h4>
+                    <p className="text-sm text-muted-foreground">Expedited trucking</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-1">Flatbed Shipping</h4>
+                    <p className="text-sm text-muted-foreground">Specialized freight</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button asChild className="bg-primary hover:bg-primary-glow text-white px-6 py-3 rounded-xl">
+                  <Link to="/contact">Contact Us</Link>
+                </Button>
+                <div className="flex items-center space-x-3 text-muted-foreground">
+                  <div className="flex items-center space-x-1">
+                    <span className="text-sm">Have Questions?</span>
+                  </div>
+                  <a href="tel:+919876543210" className="font-semibold text-foreground hover:text-primary">
+                    Call: +91 98765 43210
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Content - Experience Badge */}
+            <div className="relative animate-slide-up" style={{ animationDelay: '0.2s' }}>
+              <div className="relative">
+                <img 
+                  src={heroImage} 
+                  alt="Logistics operations" 
+                  className="w-full h-96 object-cover rounded-2xl shadow-2xl"
+                />
+                {/* Experience Badge */}
+                <div className="absolute -bottom-8 -left-8 bg-accent text-white p-8 rounded-2xl shadow-2xl">
+                  <div className="text-center">
+                    <div className="text-4xl font-bold mb-2">24+</div>
+                    <div className="text-white/90 text-sm font-medium">Years of Experience</div>
+                  </div>
+                </div>
+                
+                {/* Floating Stats */}
+                <div className="absolute -top-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-border/20">
+                  <div className="flex items-center space-x-3">
+                    <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+                      <Truck className="w-6 h-6 text-primary" />
+                    </div>
+                    <div>
+                      <div className="font-bold text-foreground">95%</div>
+                      <div className="text-xs text-muted-foreground">On-time Delivery</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -223,6 +317,31 @@ export default function Home() {
             </p>
           </div>
           
+          {/* Stats Section */}
+          <div className="bg-primary text-white py-16 -mx-4 sm:-mx-6 lg:-mx-8 mb-16 rounded-2xl">
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div className="animate-slide-up">
+                  <div className="text-4xl md:text-5xl font-bold text-accent mb-2">50k</div>
+                  <div className="text-white/80">Successful Transportations</div>
+                </div>
+                <div className="animate-slide-up" style={{ animationDelay: '0.1s' }}>
+                  <div className="text-4xl md:text-5xl font-bold text-accent mb-2">256</div>
+                  <div className="text-white/80">Land Freight Transportation</div>
+                </div>
+                <div className="animate-slide-up" style={{ animationDelay: '0.2s' }}>
+                  <div className="text-4xl md:text-5xl font-bold text-accent mb-2">25+</div>
+                  <div className="text-white/80">Countries of Operation</div>
+                </div>
+                <div className="animate-slide-up" style={{ animationDelay: '0.3s' }}>
+                  <div className="text-4xl md:text-5xl font-bold text-accent mb-2">125</div>
+                  <div className="text-white/80">Train Freight Transportation</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Features Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => (
               <div 
@@ -241,35 +360,90 @@ export default function Home() {
         </div>
       </section>
 
-      {/* How It Works Section */}
+      {/* Services Section */}
       <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gradient-primary mb-4 font-poppins">How It Works</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Simple, fast, and reliable shipping process
+            <div className="inline-flex items-center px-4 py-2 bg-accent/10 text-accent rounded-full mb-6 text-sm font-medium">
+              Our Services
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 font-poppins">
+              Wide Variety of Logistics Services
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Logisca AI freight service deliver the knowledge & opportunity to optimize every mile on every lane. Get full-service.
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {steps.map((step, index) => (
-              <div 
-                key={step.number}
-                className="text-center animate-slide-up"
-                style={{ animationDelay: `${index * 0.2}s` }}
-              >
-                <div className="relative mb-8">
-                  <div className="flex items-center justify-center w-20 h-20 bg-gradient-accent rounded-full mx-auto mb-4 text-2xl font-bold text-white">
-                    {step.number}
-                  </div>
-                  {index < steps.length - 1 && (
-                    <div className="hidden md:block absolute top-10 left-1/2 w-full h-px bg-border transform translate-x-1/2"></div>
-                  )}
+            <div className="group relative animate-slide-up">
+              <div className="aspect-video bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl overflow-hidden mb-6 relative">
+                <img 
+                  src={heroImage} 
+                  alt="Maritime Freight" 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-blue-600">
+                  SERVICE ONE
                 </div>
-                <h3 className="text-2xl font-semibold text-foreground mb-4">{step.title}</h3>
-                <p className="text-muted-foreground">{step.description}</p>
+                <div className="absolute bottom-4 right-4 w-12 h-12 bg-accent rounded-full flex items-center justify-center text-white">
+                  <ArrowRight className="w-6 h-6" />
+                </div>
               </div>
-            ))}
+              <h3 className="text-2xl font-bold text-foreground mb-3">Maritime Freight Transportation</h3>
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                Logisca air freight service deliver the knowledge opportunity optimize every mile on every lane. Get full-service opportunity optimize.
+              </p>
+              <Link to="/services/maritime" className="inline-flex items-center text-accent font-medium hover:text-accent-glow transition-colors">
+                Read More <ArrowRight className="ml-2 w-4 h-4" />
+              </Link>
+            </div>
+
+            <div className="group relative animate-slide-up" style={{ animationDelay: '0.1s' }}>
+              <div className="aspect-video bg-gradient-to-br from-red-500 to-red-600 rounded-2xl overflow-hidden mb-6 relative">
+                <img 
+                  src={heroImage} 
+                  alt="Land Freight" 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-red-600">
+                  SERVICE TWO
+                </div>
+                <div className="absolute bottom-4 right-4 w-12 h-12 bg-accent rounded-full flex items-center justify-center text-white">
+                  <ArrowRight className="w-6 h-6" />
+                </div>
+              </div>
+              <h3 className="text-2xl font-bold text-foreground mb-3">Land Freight Transportation</h3>
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                Logisca air freight service deliver the knowledge opportunity optimize every mile on every lane. Get full-service opportunity optimize.
+              </p>
+              <Link to="/services/land" className="inline-flex items-center text-accent font-medium hover:text-accent-glow transition-colors">
+                Read More <ArrowRight className="ml-2 w-4 h-4" />
+              </Link>
+            </div>
+
+            <div className="group relative animate-slide-up" style={{ animationDelay: '0.2s' }}>
+              <div className="aspect-video bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl overflow-hidden mb-6 relative">
+                <img 
+                  src={heroImage} 
+                  alt="Train Freight" 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-orange-600">
+                  SERVICE THREE
+                </div>
+                <div className="absolute bottom-4 right-4 w-12 h-12 bg-accent rounded-full flex items-center justify-center text-white">
+                  <ArrowRight className="w-6 h-6" />
+                </div>
+              </div>
+              <h3 className="text-2xl font-bold text-foreground mb-3">Train Freight Transportation</h3>
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                Logisca air freight service deliver the knowledge opportunity optimize every mile on every lane. Get full-service opportunity optimize.
+              </p>
+              <Link to="/services/train" className="inline-flex items-center text-accent font-medium hover:text-accent-glow transition-colors">
+                Read More <ArrowRight className="ml-2 w-4 h-4" />
+              </Link>
+            </div>
           </div>
         </div>
       </section>

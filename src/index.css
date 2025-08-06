@@ -21,9 +21,9 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 220 26% 14%;
 
-    /* Primary Brand Colors - Professional Blue */
-    --primary: 220 91% 42%;
-    --primary-glow: 220 91% 65%;
+    /* Primary Brand Colors - Modern Teal/Navy */
+    --primary: 194 100% 28%;
+    --primary-glow: 194 76% 45%;
     --primary-foreground: 0 0% 100%;
 
     /* Secondary - Light Blue/Gray */
@@ -34,9 +34,9 @@ All colors MUST be HSL.
     --muted: 220 13% 95%;
     --muted-foreground: 220 9% 46%;
 
-    /* Accent - Orange for CTAs */
-    --accent: 24 94% 53%;
-    --accent-glow: 24 94% 70%;
+    /* Accent - Modern Orange for CTAs */
+    --accent: 22 100% 62%;
+    --accent-glow: 22 100% 72%;
     --accent-foreground: 0 0% 100%;
 
     /* Success Green */
