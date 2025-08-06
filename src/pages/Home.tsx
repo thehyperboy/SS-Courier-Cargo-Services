@@ -127,7 +127,7 @@ export default function Home() {
               </h1>
               
               <p className="text-xl text-white/80 mb-8 leading-relaxed max-w-lg">
-                SS Courier & Cargo Services provides domestic and international shipping, cargo, express delivery, and pickup services. Over 22 years of experience serving Hyderabad and India. Fast, secure, and affordable shipping for personal and business needs.
+                SS Courier & Cargo Services is a Hyderabad-based logistics company established in 2001, offering domestic and international courier, cargo, express delivery, air and surface transportation, package tracking, and pickup services. With over 22 years of experience, we provide fast, secure, and affordable shipping for personal and business needs. Contact us at +91 9848231347 or sscouriers347@yahoo.co.in.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 mb-12">
@@ -191,51 +191,50 @@ export default function Home() {
                 <span className="text-accent">damage-free</span>
               </h2>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Logisca AI freight service deliver the knowledge & opportunity to optimize every mile on every lane. 
-                Get full-service Truckload services provide the options you need to manage costs by combining our technology intelligence.
+                SS Courier & Cargo Services ensures your shipments are delivered safely and securely, with careful handling and reliable service. We offer domestic and international courier, cargo, express delivery, package tracking, and pickup services for personal and business needs. Experience fast, affordable, and damage-free transport every time.
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
                   <div>
-                    <h4 className="font-semibold text-foreground mb-1">International Shipping</h4>
-                    <p className="text-sm text-muted-foreground">Global delivery solutions</p>
+                    <h4 className="font-semibold text-foreground mb-1">Domestic Courier Services</h4>
+                    <p className="text-sm text-muted-foreground">Shipping within India</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
                   <div>
-                    <h4 className="font-semibold text-foreground mb-1">Container Freight</h4>
-                    <p className="text-sm text-muted-foreground">Secure container transport</p>
+                    <h4 className="font-semibold text-foreground mb-1">International Courier Services</h4>
+                    <p className="text-sm text-muted-foreground">Global shipping capabilities</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
                   <div>
-                    <h4 className="font-semibold text-foreground mb-1">Express Product Shipping</h4>
-                    <p className="text-sm text-muted-foreground">Fast delivery service</p>
+                    <h4 className="font-semibold text-foreground mb-1">Cargo Services</h4>
+                    <p className="text-sm text-muted-foreground">Large shipments, furniture, vehicles</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
                   <div>
-                    <h4 className="font-semibold text-foreground mb-1">Intermodal Shipping</h4>
-                    <p className="text-sm text-muted-foreground">Multi-mode transport</p>
+                    <h4 className="font-semibold text-foreground mb-1">Express Delivery</h4>
+                    <p className="text-sm text-muted-foreground">24-48 hour delivery</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
                   <div>
-                    <h4 className="font-semibold text-foreground mb-1">Hot Shot Trucking</h4>
-                    <p className="text-sm text-muted-foreground">Expedited trucking</p>
+                    <h4 className="font-semibold text-foreground mb-1">Pickup Services</h4>
+                    <p className="text-sm text-muted-foreground">Collection from customer locations</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
                   <div>
-                    <h4 className="font-semibold text-foreground mb-1">Flatbed Shipping</h4>
-                    <p className="text-sm text-muted-foreground">Specialized freight</p>
+                    <h4 className="font-semibold text-foreground mb-1">Package Tracking</h4>
+                    <p className="text-sm text-muted-foreground">Online shipment monitoring</p>
                   </div>
                 </div>
               </div>
@@ -304,20 +303,20 @@ export default function Home() {
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                 <div className="animate-slide-up">
-                  <div className="text-4xl md:text-5xl font-bold text-accent mb-2">50k</div>
-                  <div className="text-white/80">Successful Transportations</div>
+                  <div className="text-4xl md:text-5xl font-bold text-accent mb-2">22+</div>
+                  <div className="text-white/80">Years of Experience</div>
                 </div>
                 <div className="animate-slide-up" style={{ animationDelay: '0.1s' }}>
-                  <div className="text-4xl md:text-5xl font-bold text-accent mb-2">256</div>
-                  <div className="text-white/80">Land Freight Transportation</div>
+                  <div className="text-4xl md:text-5xl font-bold text-accent mb-2">500+</div>
+                  <div className="text-white/80">Happy Clients</div>
                 </div>
                 <div className="animate-slide-up" style={{ animationDelay: '0.2s' }}>
-                  <div className="text-4xl md:text-5xl font-bold text-accent mb-2">25+</div>
-                  <div className="text-white/80">Countries of Operation</div>
+                  <div className="text-4xl md:text-5xl font-bold text-accent mb-2">24/7</div>
+                  <div className="text-white/80">Customer Support</div>
                 </div>
                 <div className="animate-slide-up" style={{ animationDelay: '0.3s' }}>
-                  <div className="text-4xl md:text-5xl font-bold text-accent mb-2">125</div>
-                  <div className="text-white/80">Train Freight Transportation</div>
+                  <div className="text-4xl md:text-5xl font-bold text-accent mb-2">95%</div>
+                  <div className="text-white/80">On-time Delivery Rate</div>
                 </div>
               </div>
             </div>
@@ -350,79 +349,82 @@ export default function Home() {
               Our Services
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 font-poppins">
-              Wide Variety of Logistics Services
+              Our Core Services
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Logisca AI freight service deliver the knowledge & opportunity to optimize every mile on every lane. Get full-service.
+              SS Courier & Cargo Services offers domestic and international courier, cargo, express delivery, package tracking, and pickup services. Fast, secure, and affordable shipping for all your needs.
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Domestic Courier */}
             <div className="group relative animate-slide-up">
               <div className="aspect-video bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl overflow-hidden mb-6 relative">
                 <img 
                   src={heroImage} 
-                  alt="Maritime Freight" 
+                  alt="Domestic Courier" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-blue-600">
-                  SERVICE ONE
+                  DOMESTIC
                 </div>
                 <div className="absolute bottom-4 right-4 w-12 h-12 bg-accent rounded-full flex items-center justify-center text-white">
                   <ArrowRight className="w-6 h-6" />
                 </div>
               </div>
-              <h3 className="text-2xl font-bold text-foreground mb-3">Maritime Freight Transportation</h3>
+              <h3 className="text-2xl font-bold text-foreground mb-3">Domestic Courier Services</h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                Logisca air freight service deliver the knowledge opportunity optimize every mile on every lane. Get full-service opportunity optimize.
+                Reliable shipping within India for documents, parcels, and packages. Fast, secure, and affordable delivery to all major cities and towns.
               </p>
-              <Link to="/services/maritime" className="inline-flex items-center text-accent font-medium hover:text-accent-glow transition-colors">
+              <Link to="/services/domestic" className="inline-flex items-center text-accent font-medium hover:text-accent-glow transition-colors">
                 Read More <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
             </div>
 
+            {/* International Courier */}
             <div className="group relative animate-slide-up" style={{ animationDelay: '0.1s' }}>
-              <div className="aspect-video bg-gradient-to-br from-red-500 to-red-600 rounded-2xl overflow-hidden mb-6 relative">
+              <div className="aspect-video bg-gradient-to-br from-green-500 to-green-600 rounded-2xl overflow-hidden mb-6 relative">
                 <img 
                   src={heroImage} 
-                  alt="Land Freight" 
+                  alt="International Courier" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-red-600">
-                  SERVICE TWO
+                <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-green-600">
+                  INTERNATIONAL
                 </div>
                 <div className="absolute bottom-4 right-4 w-12 h-12 bg-accent rounded-full flex items-center justify-center text-white">
                   <ArrowRight className="w-6 h-6" />
                 </div>
               </div>
-              <h3 className="text-2xl font-bold text-foreground mb-3">Land Freight Transportation</h3>
+              <h3 className="text-2xl font-bold text-foreground mb-3">International Courier Services</h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                Logisca air freight service deliver the knowledge opportunity optimize every mile on every lane. Get full-service opportunity optimize.
+                Global shipping to over 25 countries. Safe and timely delivery of parcels, documents, and cargo worldwide with real-time tracking.
               </p>
-              <Link to="/services/land" className="inline-flex items-center text-accent font-medium hover:text-accent-glow transition-colors">
+              <Link to="/services/international" className="inline-flex items-center text-accent font-medium hover:text-accent-glow transition-colors">
                 Read More <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
             </div>
 
+            {/* Cargo & Express Delivery */}
             <div className="group relative animate-slide-up" style={{ animationDelay: '0.2s' }}>
               <div className="aspect-video bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl overflow-hidden mb-6 relative">
                 <img 
                   src={heroImage} 
-                  alt="Train Freight" 
+                  alt="Cargo & Express Delivery" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-orange-600">
-                  SERVICE THREE
+                  CARGO & EXPRESS
                 </div>
                 <div className="absolute bottom-4 right-4 w-12 h-12 bg-accent rounded-full flex items-center justify-center text-white">
                   <ArrowRight className="w-6 h-6" />
                 </div>
               </div>
-              <h3 className="text-2xl font-bold text-foreground mb-3">Train Freight Transportation</h3>
+              <h3 className="text-2xl font-bold text-foreground mb-3">Cargo & Express Delivery</h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                Logisca air freight service deliver the knowledge opportunity optimize every mile on every lane. Get full-service opportunity optimize.
+                Large shipments, furniture, vehicles, and urgent deliveries. 24-48 hour express service available for domestic and international destinations.
               </p>
-              <Link to="/services/train" className="inline-flex items-center text-accent font-medium hover:text-accent-glow transition-colors">
+              <Link to="/services/cargo" className="inline-flex items-center text-accent font-medium hover:text-accent-glow transition-colors">
                 Read More <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
             </div>
