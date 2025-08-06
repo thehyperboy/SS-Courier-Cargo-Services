@@ -6,32 +6,32 @@ import heroImage from '@/assets/hero-courier.jpg';
 const services = [
   {
     icon: Package,
-    title: 'Domestic Courier',
-    description: 'Fast and reliable delivery across the country with real-time tracking.',
+    title: 'Domestic Courier Services',
+    description: 'Shipping within India with reliable and affordable service.',
     link: '/services/domestic'
   },
   {
     icon: Globe,
-    title: 'International Courier',
-    description: 'Global shipping solutions with customs clearance support.',
+    title: 'International Courier Services',
+    description: 'Global shipping capabilities to over 25 countries.',
     link: '/services/international'
   },
   {
     icon: Truck,
     title: 'Cargo Services',
-    description: 'Heavy shipments and bulk cargo transportation.',
+    description: 'Large shipments including furniture and vehicles.',
     link: '/services/cargo'
   },
   {
     icon: Zap,
     title: 'Express Delivery',
-    description: '24-48 hours express delivery for urgent shipments.',
+    description: 'Domestic & international destinations within 24-48 hours.',
     link: '/services/express'
   },
   {
     icon: MapPin,
-    title: 'Door-to-Door Pickup',
-    description: 'Convenient pickup and delivery right at your doorstep.',
+    title: 'Pickup Services',
+    description: 'Collection from customer locations for convenience.',
     link: '/services/pickup'
   }
 ];
@@ -39,23 +39,23 @@ const services = [
 const features = [
   {
     icon: Clock,
-    title: '24+ Years Experience',
-    description: 'Trusted expertise in courier and cargo services since 1996.'
+    title: '22+ Years Experience',
+    description: 'Serving Hyderabad and beyond since 2001.'
   },
   {
     icon: Zap,
-    title: '24-48 Hrs Express',
-    description: 'Lightning-fast delivery for your urgent shipments.'
+    title: 'Fast Delivery',
+    description: 'Most deliveries completed within 24-48 hours.'
   },
   {
     icon: Users,
     title: 'Customer First',
-    description: 'Dedicated customer support and satisfaction guarantee.'
+    description: 'Dedicated support and satisfaction guarantee.'
   },
   {
     icon: Shield,
     title: 'Secure & Safe',
-    description: 'Your packages are fully insured and handled with care.'
+    description: 'Fully insured packages, handled with care.'
   }
 ];
 
@@ -79,22 +79,22 @@ const steps = [
 
 const testimonials = [
   {
-    name: 'Rajesh Kumar',
+    name: 'Ravi Kumar',
     rating: 5,
-    comment: 'Excellent service! My international shipment reached on time without any issues.',
-    business: 'Import/Export Business'
+    comment: 'SS Courier delivered my furniture safely and on time. Highly recommended!',
+    business: 'Hyderabad Resident'
   },
   {
-    name: 'Priya Sharma',
+    name: 'Anjali Singh',
     rating: 5,
-    comment: 'Very reliable for domestic courier. Great customer support and tracking system.',
-    business: 'Online Retailer'
+    comment: 'Fast international shipping and great customer support.',
+    business: 'Small Business Owner'
   },
   {
-    name: 'Amit Patel',
+    name: 'Suresh Reddy',
     rating: 5,
-    comment: 'Best rates for heavy cargo shipments. Professional handling and timely delivery.',
-    business: 'Manufacturing Company'
+    comment: 'Affordable rates and reliable service for my business shipments.',
+    business: 'Retailer'
   }
 ];
 
@@ -115,7 +115,7 @@ export default function Home() {
             <div className="text-left animate-slide-up">
               <div className="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full mb-6 text-white/90 text-sm font-medium">
                 <CheckCircle className="w-4 h-4 mr-2 text-accent" />
-                SS Courier & Cargo Services
+                SS Courier & Cargo Services – Hyderabad, India
               </div>
               
               <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 font-poppins leading-tight">
@@ -127,18 +127,17 @@ export default function Home() {
               </h1>
               
               <p className="text-xl text-white/80 mb-8 leading-relaxed max-w-lg">
-                Take your business to the next level with SS Courier's new business management tools. 
-                Logica will open a new horizon for us.
+                SS Courier & Cargo Services provides domestic and international shipping, cargo, express delivery, and pickup services. Over 22 years of experience serving Hyderabad and India. Fast, secure, and affordable shipping for personal and business needs.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 mb-12">
                 <Button asChild size="lg" className="bg-accent hover:bg-accent-glow text-white text-lg px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
                   <Link to="/contact">
-                    Contact Logistics <ArrowRight className="ml-2 w-5 h-5" />
+                    Contact Us <ArrowRight className="ml-2 w-5 h-5" />
                   </Link>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="border-2 border-white/50 bg-white/10 backdrop-blur-sm text-white hover:bg-white/20 hover:border-white/70 text-lg px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 font-semibold">
-                  <Link to="/track">Track Package</Link>
+                  <Link to="/track">Track Shipment</Link>
                 </Button>
               </div>
 
