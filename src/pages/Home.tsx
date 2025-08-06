@@ -103,30 +103,77 @@ export default function Home() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section 
-        className="relative h-screen flex items-center justify-center bg-cover bg-center"
+        className="relative min-h-screen flex items-center justify-center bg-cover bg-center overflow-hidden"
         style={{ backgroundImage: `url(${heroImage})` }}
       >
         <div className="absolute inset-0 bg-gradient-hero"></div>
-        <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-slide-up font-poppins">
+        
+        {/* Floating Elements */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute top-20 left-10 w-20 h-20 bg-white/5 rounded-full animate-float" style={{ animationDelay: '0s' }}></div>
+          <div className="absolute top-40 right-20 w-32 h-32 bg-white/3 rounded-full animate-float" style={{ animationDelay: '1s' }}></div>
+          <div className="absolute bottom-40 left-20 w-16 h-16 bg-white/5 rounded-full animate-float" style={{ animationDelay: '2s' }}></div>
+        </div>
+
+        <div className="relative z-10 text-center max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="animate-slide-up">
+            <div className="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full mb-6 text-white/90 text-sm font-medium">
+              <CheckCircle className="w-4 h-4 mr-2 text-accent" />
+              24+ Years of Trusted Service Since 1996
+            </div>
+          </div>
+          
+          <h1 className="text-6xl md:text-8xl font-bold text-white mb-8 animate-slide-up font-poppins" style={{ animationDelay: '0.1s' }}>
             Delivering Fast.
             <br />
             <span className="text-gradient-accent">Anywhere. Anytime.</span>
           </h1>
-          <p className="text-xl md:text-2xl text-white/90 mb-8 animate-slide-up" style={{ animationDelay: '0.2s' }}>
-            Professional courier and cargo services with 24+ years of trusted experience.
+          
+          <p className="text-xl md:text-2xl text-white/90 mb-6 animate-slide-up max-w-4xl mx-auto leading-relaxed" style={{ animationDelay: '0.2s' }}>
+            Professional courier and cargo services with unmatched reliability.
             <br />
-            Your reliable partner for domestic and international shipping.
+            Your trusted partner for domestic and international shipping solutions.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" style={{ animationDelay: '0.4s' }}>
-            <Button asChild size="lg" className="btn-hero text-lg px-8 py-4">
+
+          <div className="flex items-center justify-center gap-8 mb-8 animate-slide-up" style={{ animationDelay: '0.3s' }}>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-white">24-48</div>
+              <div className="text-white/70 text-sm">Hours Delivery</div>
+            </div>
+            <div className="w-px h-12 bg-white/30"></div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-white">100+</div>
+              <div className="text-white/70 text-sm">Cities Covered</div>
+            </div>
+            <div className="w-px h-12 bg-white/30"></div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-white">24/7</div>
+              <div className="text-white/70 text-sm">Support</div>
+            </div>
+          </div>
+          
+          <div className="flex flex-col sm:flex-row gap-6 justify-center animate-slide-up" style={{ animationDelay: '0.4s' }}>
+            <Button asChild size="lg" className="btn-hero text-lg px-10 py-5 text-xl">
               <Link to="/book">
-                Book Pickup <ArrowRight className="ml-2 w-5 h-5" />
+                Book Pickup <ArrowRight className="ml-3 w-6 h-6" />
               </Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="bg-white/10 border-white/30 text-white hover:bg-white/20 text-lg px-8 py-4">
+            <Button asChild size="lg" variant="outline" className="glassmorphism text-white hover:bg-white/20 text-lg px-10 py-5 text-xl">
               <Link to="/track">Track Shipment</Link>
             </Button>
+          </div>
+
+          {/* Quick Actions */}
+          <div className="mt-12 animate-slide-up" style={{ animationDelay: '0.5s' }}>
+            <p className="text-white/70 mb-4">Need immediate assistance?</p>
+            <div className="flex justify-center gap-4">
+              <a href="tel:+919876543210" className="inline-flex items-center px-6 py-3 glassmorphism text-white rounded-xl hover:bg-white/20 transition-all">
+                <span className="mr-2">📞</span> Call Now
+              </a>
+              <a href="https://wa.me/919876543210" className="inline-flex items-center px-6 py-3 bg-green-500/20 backdrop-blur-sm border border-green-400/30 text-white rounded-xl hover:bg-green-500/30 transition-all">
+                <span className="mr-2">💬</span> WhatsApp
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -180,14 +227,14 @@ export default function Home() {
             {features.map((feature, index) => (
               <div 
                 key={feature.title}
-                className="text-center card-elegant p-8 hover-lift animate-slide-up"
+                className="text-center card-feature hover-lift animate-slide-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="flex items-center justify-center w-16 h-16 bg-gradient-primary rounded-full mx-auto mb-6">
-                  <feature.icon className="w-8 h-8 text-white" />
+                <div className="flex items-center justify-center w-20 h-20 bg-gradient-primary rounded-2xl mx-auto mb-6 shadow-lg">
+                  <feature.icon className="w-10 h-10 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold text-foreground mb-3">{feature.title}</h3>
-                <p className="text-muted-foreground">{feature.description}</p>
+                <h3 className="text-2xl font-semibold text-foreground mb-4">{feature.title}</h3>
+                <p className="text-muted-foreground leading-relaxed">{feature.description}</p>
               </div>
             ))}
           </div>

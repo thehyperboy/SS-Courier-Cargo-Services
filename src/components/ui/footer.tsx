@@ -17,10 +17,14 @@ export function Footer() {
                 <span className="text-sm text-primary-foreground/80">& Cargo Services</span>
               </div>
             </div>
-            <p className="text-primary-foreground/80 text-sm leading-relaxed">
+            <p className="text-primary-foreground/80 text-sm leading-relaxed mb-3">
               Delivering excellence with 24+ years of experience in domestic and international courier services. 
               Your trusted partner for fast, reliable shipping solutions.
             </p>
+            <div className="text-primary-foreground/60 text-xs">
+              <p className="mb-1">🌐 Website: www.sscourier.com</p>
+              <p>📧 Email: info@sscourier.com</p>
+            </div>
             <div className="flex space-x-4">
               <a href="#" className="text-primary-foreground/60 hover:text-white transition-colors">
                 <Facebook className="w-5 h-5" />
@@ -139,9 +143,10 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-white/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-          <p className="text-primary-foreground/60 text-sm">
-            © 2024 SS Courier & Cargo Services. All rights reserved.
-          </p>
+          <div className="text-primary-foreground/60 text-sm">
+            <p>© 2024 SS Courier & Cargo Services. All rights reserved.</p>
+            <p className="text-xs mt-1">🌐 Visit us at: www.sscourier.com | 📱 Mobile App Available</p>
+          </div>
           <div className="flex space-x-6 text-sm">
             <Link to="/privacy" className="text-primary-foreground/60 hover:text-white transition-colors">
               Privacy Policy
