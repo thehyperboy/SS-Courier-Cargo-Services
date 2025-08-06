@@ -132,12 +132,12 @@ export default function Home() {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 mb-12">
-                <Button asChild size="lg" className="bg-accent hover:bg-accent-glow text-white text-lg px-8 py-4 rounded-xl">
+                <Button asChild size="lg" className="bg-accent hover:bg-accent-glow text-white text-lg px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
                   <Link to="/contact">
                     Contact Logistics <ArrowRight className="ml-2 w-5 h-5" />
                   </Link>
                 </Button>
-                <Button asChild size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 text-lg px-8 py-4 rounded-xl">
+                <Button asChild size="lg" variant="outline" className="border-2 border-white/50 bg-white/10 backdrop-blur-sm text-white hover:bg-white/20 hover:border-white/70 text-lg px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 font-semibold">
                   <Link to="/track">Track Package</Link>
                 </Button>
               </div>
@@ -173,23 +173,6 @@ export default function Home() {
                 <div className="absolute bottom-1/4 right-1/4 w-8 h-8 bg-accent/30 rounded-lg animate-float" style={{ animationDelay: '2s' }}></div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Partner Logos Section */}
-      <section className="py-12 bg-background border-b border-border/50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8">
-            <p className="text-muted-foreground">Trusted by leading companies</p>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-8 items-center opacity-60">
-            {/* Placeholder partner logos */}
-            {[1, 2, 3, 4, 5].map((i) => (
-              <div key={i} className="flex items-center justify-center h-16 bg-muted/30 rounded-lg">
-                <span className="text-muted-foreground font-medium text-sm">Partner {i}</span>
-              </div>
-            ))}
           </div>
         </div>
       </section>
