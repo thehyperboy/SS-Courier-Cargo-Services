@@ -482,7 +482,7 @@ export default function Home() {
                 Book Pickup Now <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 text-lg px-8 py-4">
+            <Button asChild size="lg" variant="outline" className="border-white/30 text-primary hover:bg-white/10 text-lg px-8 py-4">
               <Link to="/contact">Contact Us</Link>
             </Button>
           </div>
