@@ -154,7 +154,7 @@ All colors MUST be HSL.
   }
 
   .card-service {
-    @apply card-elegant p-6 hover:scale-105 group cursor-pointer;
+    @apply card-elegant p-6 hover:scale-105 cursor-pointer;
   }
 
   /* Text Effects */

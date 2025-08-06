@@ -146,7 +146,7 @@ export default function Home() {
               <Link
                 key={service.title}
                 to={service.link}
-                className="card-service animate-slide-up"
+                className="card-service group animate-slide-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="flex items-center space-x-4 mb-4">
