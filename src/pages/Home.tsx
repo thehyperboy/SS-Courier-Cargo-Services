@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Package, Globe, Truck, Zap, MapPin, Clock, Users, Shield, Star, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import heroImage from '@/assets/hero-courier.jpg';
+import StatsStrip from '@/components/blocks/StatsStrip';
 
 const services = [
   {
@@ -175,6 +176,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Stats Strip */}
+      <StatsStrip />
 
       {/* Main Features Section */}
       <section className="py-20 bg-secondary/20">
