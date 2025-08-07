@@ -241,6 +241,9 @@ export default function BookNow() {
                     <div>
                       <p className="font-medium">Call Us</p>
                       <p className="text-sm text-muted-foreground">+91 9848231347</p>
+                      <p className="text-sm text-muted-foreground">+91 9885561347</p>
+                      <p className="text-sm text-muted-foreground">+91 040 48539215</p>
+                      <p className="text-sm text-muted-foreground">+91 040 42101419</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-3">
