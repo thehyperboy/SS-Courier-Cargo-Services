@@ -483,7 +483,7 @@ export default function Home() {
                 Book Pickup Now <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-4 font-medium">
+            <Button asChild size="lg" variant="outline" className="border-white !text-white hover:!bg-white hover:!text-primary text-lg px-8 py-4 font-medium">
               <Link to="/contact">Contact Us</Link>
             </Button>
           </div>
