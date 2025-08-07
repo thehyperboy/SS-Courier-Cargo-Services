@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, Package, Globe, Truck, Zap, MapPin, Clock, Users, Shield, Star, CheckCircle } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import heroImage from '@/assets/hero-courier.jpg';
 
 const services = [
   {
@@ -99,26 +101,80 @@ const testimonials = [
 export default function Home() {
   return (
     <div className="min-h-screen">
-      {/* Modern Hero Section with Mockup */}
-      <HeroWithMockup
-        title="Fast & Reliable Courier Services"
-        description="Professional logistics solutions with 24+ years of experience. Domestic & international delivery, express shipping, and door-to-door pickup services across India."
-        primaryCta={{
-          text: "Book Pickup Now",
-          href: "/book",
-        }}
-        secondaryCta={{
-          text: "Track Shipment",
-          href: "/track",
-        }}
-        mockupImage={{
-          alt: "SS Courier Dashboard - Track and manage your shipments",
-          width: 1200,
-          height: 800,
-          src: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&h=800&fit=crop&crop=center"
-        }}
-        className="bg-gradient-to-br from-background via-background/95 to-secondary/20"
-      />
+      {/* Hero Section */}
+      <section className="relative min-h-screen bg-gradient-to-br from-primary via-primary-glow to-primary overflow-hidden">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-20 left-20 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-20 w-80 h-80 bg-accent/10 rounded-full blur-2xl"></div>
+        </div>
+
+        <div className="relative z-10 flex items-center min-h-screen">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Left Content */}
+            <div className="text-left animate-slide-up">
+              <div className="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full mb-6 text-white/90 text-sm font-medium">
+                <CheckCircle className="w-4 h-4 mr-2 text-accent" />
+                SS Courier & Cargo Services – Hyderabad, India
+              </div>
+              
+              <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 font-poppins leading-tight">
+                Welcome To
+                <br />
+                <span className="text-accent">SS Courier</span>
+                <br />
+                <span className="text-3xl md:text-4xl font-normal text-white/90">Transport Services</span>
+              </h1>
+              
+              <p className="text-xl text-white/80 mb-8 leading-relaxed max-w-lg">
+                SS Courier & Cargo Services is a Hyderabad-based logistics company established in 2001, offering domestic and international courier, cargo, express delivery, air and surface transportation, package tracking, and pickup services. With over 22 years of experience, we provide fast, secure, and affordable shipping for personal and business needs. Contact us at +91 9848231347 or sscouriers347@yahoo.co.in.
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-4 mb-12">
+                <Button asChild size="lg" className="bg-accent hover:bg-accent-glow text-white text-lg px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                  <Link to="/contact">
+                    Contact Us <ArrowRight className="ml-2 w-5 h-5" />
+                  </Link>
+                </Button>
+                <Button asChild size="lg" variant="outline" className="border-2 border-white/50 bg-white/10 backdrop-blur-sm text-white hover:bg-white/20 hover:border-white/70 text-lg px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 font-semibold">
+                  <Link to="/track">Track Shipment</Link>
+                </Button>
+              </div>
+
+              {/* Stats */}
+              <div className="grid grid-cols-3 gap-6 text-white">
+                <div className="text-center">
+                  <div className="text-2xl font-bold">24+</div>
+                  <div className="text-white/70 text-sm">Years Experience</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold">500+</div>
+                  <div className="text-white/70 text-sm">Happy Clients</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold">24/7</div>
+                  <div className="text-white/70 text-sm">Support</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Content - Truck Image */}
+            <div className="relative animate-slide-up" style={{ animationDelay: '0.2s' }}>
+              <div className="relative">
+                <img 
+                  src={heroImage} 
+                  alt="Courier truck" 
+                  className="w-full h-auto object-contain"
+                />
+                {/* Floating boxes effect */}
+                <div className="absolute -top-4 -right-4 w-16 h-16 bg-accent/20 rounded-lg animate-float" style={{ animationDelay: '0s' }}></div>
+                <div className="absolute top-1/4 -left-6 w-12 h-12 bg-white/10 rounded-lg animate-float" style={{ animationDelay: '1s' }}></div>
+                <div className="absolute bottom-1/4 right-1/4 w-8 h-8 bg-accent/30 rounded-lg animate-float" style={{ animationDelay: '2s' }}></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Main Features Section */}
       <section className="py-20 bg-secondary/20">
