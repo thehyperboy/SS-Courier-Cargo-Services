@@ -91,28 +91,28 @@ export function Footer() {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-primary-foreground/60 mt-0.5 flex-shrink-0" />
                 <div className="text-sm">
-                  <p className="text-primary-foreground/80">Prakash Nagar</p>
-                  <p className="text-primary-foreground/60">Your City, Your State</p>
+                  <p className="text-primary-foreground/80">1-8-505/B/21, Prakash Nagar</p>
+                  <p className="text-primary-foreground/60">Begumpet, Hyderabad, Telangana 500016</p>
                 </div>
               </div>
               
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-primary-foreground/60" />
-                <a 
-                  href="tel:+919876543210" 
-                  className="text-sm text-primary-foreground/80 hover:text-white transition-colors"
-                >
-                  +91 98765 43210
-                </a>
+                <div className="text-sm text-primary-foreground/80">
+                  <a href="tel:+919848231347" className="block hover:text-white transition-colors">+91 9848231347</a>
+                  <a href="tel:+919885561347" className="block hover:text-white transition-colors">+91 9885561347</a>
+                  <a href="tel:+914048539215" className="block hover:text-white transition-colors">+91 040 48539215</a>
+                  <a href="tel:+914042101419" className="block hover:text-white transition-colors">+91 040 42101419</a>
+                </div>
               </div>
               
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-primary-foreground/60" />
                 <a 
-                  href="mailto:info@sscourier.com" 
+                  href="mailto:sscouriers347@yahoo.co.in" 
                   className="text-sm text-primary-foreground/80 hover:text-white transition-colors"
                 >
-                  info@sscourier.com
+                  sscouriers347@yahoo.co.in
                 </a>
               </div>
             </div>
@@ -120,13 +120,13 @@ export function Footer() {
             {/* Quick Contact Buttons */}
             <div className="flex space-x-2 pt-2">
               <a 
-                href="tel:+919876543210" 
+                href="tel:+919848231347" 
                 className="flex-1 bg-white/10 hover:bg-white/20 text-center py-2 px-3 rounded-lg text-sm font-medium transition-colors"
               >
                 Call
               </a>
               <a 
-                href="https://wa.me/919876543210" 
+                href="https://wa.me/919848231347" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex-1 bg-accent hover:bg-accent-glow text-center py-2 px-3 rounded-lg text-sm font-medium transition-colors"

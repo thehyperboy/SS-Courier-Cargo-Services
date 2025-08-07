@@ -7,8 +7,12 @@ import { Navbar } from "@/components/ui/navbar";
 import { Footer } from "@/components/ui/footer";
 import Home from "./pages/Home";
 import Index from "./pages/Index";
+import About from "./pages/About";
 import Services from "./pages/Services";
+import Pricing from "./pages/Pricing";
+import BookNow from "./pages/BookNow";
 import Track from "./pages/Track";
+import Domestic from "./pages/services/Domestic";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,9 +28,13 @@ const App = () => (
           <main className="flex-1">
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/contact" element={<Index />} />
+              <Route path="/about" element={<About />} />
               <Route path="/services" element={<Services />} />
+              <Route path="/services/domestic" element={<Domestic />} />
+              <Route path="/pricing" element={<Pricing />} />
+              <Route path="/book" element={<BookNow />} />
               <Route path="/track" element={<Track />} />
+              <Route path="/contact" element={<Index />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
