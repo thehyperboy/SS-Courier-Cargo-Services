@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Package, Globe, Truck, Zap, MapPin, Clock, Users, Shield, Star, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import heroImage from '@/assets/hero-courier.jpg';
-import StatsStrip from '@/components/blocks/StatsStrip';
+
 
 const services = [
   {
@@ -132,29 +132,29 @@ export default function Home() {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 mb-12">
-                <Button asChild size="lg" className="bg-accent hover:bg-accent-glow text-white text-lg px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                <Button asChild className="bg-accent hover:bg-accent-glow text-white px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
                   <Link to="/contact">
                     Contact Us <ArrowRight className="ml-2 w-5 h-5" />
                   </Link>
                 </Button>
-                <Button asChild size="lg" variant="outline" className="border-2 border-white/50 bg-white/10 backdrop-blur-sm text-white hover:bg-white/20 hover:border-white/70 text-lg px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 font-semibold">
+                <Button asChild className="border-2 border-white/50 bg-white/10 backdrop-blur-sm text-white hover:bg-white/20 hover:border-white/70 px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 font-semibold">
                   <Link to="/track">Track Shipment</Link>
                 </Button>
               </div>
 
-              {/* Stats */}
+              {/* Key Facts */}
               <div className="grid grid-cols-3 gap-6 text-white">
                 <div className="text-center">
-                  <div className="text-2xl font-bold">24+</div>
+                  <div className="text-2xl font-bold">22+</div>
                   <div className="text-white/70 text-sm">Years Experience</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold">500+</div>
-                  <div className="text-white/70 text-sm">Happy Clients</div>
+                  <div className="text-2xl font-bold">24-48h</div>
+                  <div className="text-white/70 text-sm">Express Delivery</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold">24/7</div>
-                  <div className="text-white/70 text-sm">Support</div>
+                  <div className="text-2xl font-bold">25+</div>
+                  <div className="text-white/70 text-sm">Countries Served</div>
                 </div>
               </div>
             </div>
@@ -176,9 +176,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Stats Strip */}
-      <StatsStrip />
 
       {/* Main Features Section */}
       <section className="py-20 bg-secondary/20">
