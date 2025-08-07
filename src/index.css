@@ -39,6 +39,10 @@ All colors MUST be HSL.
     --accent-glow: 22 100% 72%;
     --accent-foreground: 0 0% 100%;
 
+    /* Brand Colors for Hero Component */
+    --brand: 194 100% 28%;
+    --brand-foreground: 194 76% 45%;
+
     /* Success Green */
     --success: 142 71% 45%;
     --success-foreground: 0 0% 100%;
@@ -121,6 +125,10 @@ All colors MUST be HSL.
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Brand Colors for Dark Mode */
+    --brand: 194 76% 45%;
+    --brand-foreground: 194 100% 28%;
   }
 }
 
@@ -192,6 +200,11 @@ All colors MUST be HSL.
 
   .glassmorphism {
     @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+
+  /* Hero Component Utility Classes */
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-b from-foreground via-foreground/90 to-muted-foreground;
   }
 }
 
