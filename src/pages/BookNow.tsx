@@ -247,7 +247,7 @@ export default function BookNow() {
                     <Mail className="w-5 h-5 text-primary" />
                     <div>
                       <p className="font-medium">Email Us</p>
-                      <p className="text-sm text-muted-foreground">info@sscourier.com</p>
+                      <p className="text-sm text-muted-foreground">sscouriers347@yahoo.co.in</p>
                     </div>
                   </div>
                   <Button variant="outline" className="w-full btn-secondary">
