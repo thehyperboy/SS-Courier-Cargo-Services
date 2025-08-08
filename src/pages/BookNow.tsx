@@ -39,8 +39,8 @@ export default function BookNow() {
             Book Your Shipment
           </h1>
           <p className="text-xl md:text-2xl text-gray-800 font-light mb-8 max-w-xl mx-auto" style={{letterSpacing: '-0.01em'}}>
-            <span className="text-black font-semibold">Fast. Reliable. Effortless.</span><br />
-            <span className="block mt-2 text-gray-700 text-lg font-normal">Experience courier booking as simple as Apple.</span>
+            <span className="text-black font-semibold">Fast. Reliable. Damage-free. Effortless.</span><br />
+            <span className="block mt-2 text-black text-lg font-normal">Experience courier booking as simple as Apple.</span>
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
             <Button className="px-8 py-4 rounded-full text-lg font-semibold bg-black text-white shadow hover:bg-gray-900 transition">
@@ -249,8 +249,11 @@ export default function BookNow() {
                     </div>
                   </div>
                 </div>
-                <Button className="w-full py-3 rounded-xl text-base font-semibold shadow hover:bg-primary/90 transition">
-                  💬 Chat Support
+                <Button
+                  className="w-full py-3 rounded-xl text-base font-semibold shadow"
+                  style={{ backgroundColor: '#0057b8', color: '#fff', border: '2px solid #fff', padding: '10px 20px', borderRadius: '5px', fontWeight: 'bold' }}
+                >
+                  Contact Us
                 </Button>
               </CardContent>
             </Card>
