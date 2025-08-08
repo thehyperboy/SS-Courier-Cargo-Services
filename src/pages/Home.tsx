@@ -102,76 +102,41 @@ const testimonials = [
 export default function Home() {
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative min-h-screen bg-gradient-to-br from-primary via-primary-glow to-primary overflow-hidden">
-        {/* Background Pattern */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-20 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 right-20 w-80 h-80 bg-accent/10 rounded-full blur-2xl"></div>
-        </div>
-
-        <div className="relative z-10 flex items-center min-h-screen">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Left Content */}
-            <div className="text-left animate-slide-up">
-              <div className="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full mb-6 text-white/90 text-sm font-medium">
-                <CheckCircle className="w-4 h-4 mr-2 text-accent" />
-                SS Courier & Cargo Services – Hyderabad, India
-              </div>
-              
-              <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 font-poppins leading-tight">
-                Welcome To
-                <br />
-                <span className="text-accent">SS Courier</span>
-                <br />
-                <span className="text-3xl md:text-4xl font-normal text-white/90">Transport Services</span>
-              </h1>
-              
-              <p className="text-xl text-white/80 mb-8 leading-relaxed max-w-lg">
-                SS Courier & Cargo Services is a Hyderabad-based logistics company established in 2001, offering domestic and international courier, cargo, express delivery, air and surface transportation, package tracking, and pickup services. With over 22 years of experience, we provide fast, secure, and affordable shipping for personal and business needs. Contact us at +91 9848231347 or sscouriers347@yahoo.co.in.
-              </p>
-              
-              <div className="flex flex-col sm:flex-row gap-4 mb-12">
-                <Button asChild className="bg-accent hover:bg-accent-glow text-white px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
-                  <Link to="/contact">
-                    Contact Us <ArrowRight className="ml-2 w-5 h-5" />
-                  </Link>
-                </Button>
-                <Button asChild className="border-2 border-white/50 bg-white/10 backdrop-blur-sm text-white hover:bg-white/20 hover:border-white/70 px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 font-semibold">
-                  <Link to="/track">Track Shipment</Link>
-                </Button>
-              </div>
-
-              {/* Key Facts */}
-              <div className="grid grid-cols-3 gap-6 text-white">
-                <div className="text-center">
-                  <div className="text-2xl font-bold">22+</div>
-                  <div className="text-white/70 text-sm">Years Experience</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold">24-48h</div>
-                  <div className="text-white/70 text-sm">Express Delivery</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold">25+</div>
-                  <div className="text-white/70 text-sm">Countries Served</div>
-                </div>
-              </div>
+      <section className="relative py-24 sm:py-28 bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          {/* Left Content */}
+          <div className="lg:col-span-7">
+            <p className="text-sm text-muted-foreground mb-4">Hyderabad • Since 2001</p>
+            <h1 className="text-5xl md:text-6xl font-semibold tracking-tight text-foreground">
+              Fast, reliable logistics built around you
+            </h1>
+            <p className="mt-6 text-lg text-muted-foreground max-w-xl">
+              Domestic and international courier & cargo. 24–48h express delivery, secure handling, and door‑to‑door pickup across India and abroad.
+            </p>
+            <div className="mt-10 flex flex-col sm:flex-row gap-4">
+              <Button asChild size="lg">
+                <Link to="/book">Book now</Link>
+              </Button>
+              <Button asChild variant="outline" size="lg">
+                <Link to="/track">Track shipment</Link>
+              </Button>
             </div>
+            <div className="mt-8 flex flex-wrap gap-6 text-sm text-muted-foreground">
+              <div>24+ years experience</div>
+              <div>95% on‑time delivery</div>
+              <div>25+ countries served</div>
+            </div>
+          </div>
 
-            {/* Right Content - Truck Image */}
-            <div className="relative animate-slide-up" style={{ animationDelay: '0.2s' }}>
-              <div className="relative">
-                <img 
-                  src={heroImage} 
-                  alt="Courier truck" 
-                  className="w-full h-auto object-contain"
-                />
-                {/* Floating boxes effect */}
-                <div className="absolute -top-4 -right-4 w-16 h-16 bg-accent/20 rounded-lg animate-float" style={{ animationDelay: '0s' }}></div>
-                <div className="absolute top-1/4 -left-6 w-12 h-12 bg-white/10 rounded-lg animate-float" style={{ animationDelay: '1s' }}></div>
-                <div className="absolute bottom-1/4 right-1/4 w-8 h-8 bg-accent/30 rounded-lg animate-float" style={{ animationDelay: '2s' }}></div>
-              </div>
+          {/* Right Content */}
+          <div className="lg:col-span-5">
+            <div className="relative">
+              <img
+                src={heroImage}
+                alt="Courier delivery in transit"
+                className="w-full h-auto rounded-2xl border border-border object-cover"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>

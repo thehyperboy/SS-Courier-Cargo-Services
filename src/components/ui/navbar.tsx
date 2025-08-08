@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, Truck, ChevronDown, Package, Globe, Zap, MapPin } from 'lucide-react';
 import { Button } from './button';
+import logo from '@/assets/ss-logo.png';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -24,15 +25,9 @@ export function Navbar() {
     <nav className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
-            <div className="flex items-center justify-center w-10 h-10 bg-gradient-primary rounded-lg">
-              <Truck className="w-6 h-6 text-white" />
-            </div>
-            <div className="flex flex-col">
-              <span className="font-poppins font-bold text-lg text-gradient-primary">SS Courier</span>
-              <span className="text-xs text-muted-foreground -mt-1">& Cargo Services</span>
-            </div>
+          <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
+            <img src={logo} alt="SS Courier & Cargo Services logo" className="h-8 w-auto" />
+            <span className="sr-only">SS Courier & Cargo Services</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -50,12 +45,12 @@ export function Navbar() {
                 <span>Services</span>
                 <ChevronDown className="w-4 h-4" />
               </DropdownMenuTrigger>
-              <DropdownMenuContent className="w-56 mt-2">
+              <DropdownMenuContent className="w-56 mt-2 z-50 bg-popover border shadow-lg">
                 {services.map((service) => (
                   <DropdownMenuItem key={service.name} asChild>
                     <Link 
                       to={service.href} 
-                      className="flex items-center space-x-3 p-3 hover:bg-secondary transition-colors"
+                      className="flex items-center space-x-3 p-3 hover:bg-muted transition-colors"
                     >
                       <service.icon className="w-4 h-4 text-primary" />
                       <span>{service.name}</span>
@@ -73,12 +68,11 @@ export function Navbar() {
             </Link>
           </div>
 
-          {/* CTA Buttons */}
-          <div className="hidden md:flex items-center space-x-4">
-            <Button variant="outline" asChild className="btn-secondary">
+          <div className="hidden md:flex items-center space-x-3">
+            <Button variant="outline" asChild>
               <Link to="/track">Track Shipment</Link>
             </Button>
-            <Button asChild className="btn-accent">
+            <Button asChild>
               <Link to="/book">Book Now</Link>
             </Button>
           </div>
@@ -147,10 +141,10 @@ export function Navbar() {
             
             {/* Mobile CTA Buttons */}
             <div className="px-3 pt-4 space-y-2">
-              <Button variant="outline" asChild className="w-full btn-secondary">
+              <Button variant="outline" asChild className="w-full">
                 <Link to="/track" onClick={() => setIsOpen(false)}>Track Shipment</Link>
               </Button>
-              <Button asChild className="w-full btn-accent">
+              <Button asChild className="w-full">
                 <Link to="/book" onClick={() => setIsOpen(false)}>Book Now</Link>
               </Button>
             </div>
