@@ -37,21 +37,21 @@ export default function BookNow() {
           <h1 className="text-6xl md:text-8xl font-extrabold tracking-tight text-gray-900 mb-6 leading-tight" style={{letterSpacing: '-0.03em'}}>
             Book Your Shipment
           </h1>
-          <p className="text-xl md:text-2xl text-gray-500 font-light mb-8 max-w-xl mx-auto" style={{letterSpacing: '-0.01em'}}>
-            Fast. Reliable. Effortless.<br />
-            <span className="block mt-2 text-gray-400 text-lg font-normal">Experience courier booking as simple as Apple.</span>
+          <p className="text-xl md:text-2xl text-gray-800 font-light mb-8 max-w-xl mx-auto" style={{letterSpacing: '-0.01em'}}>
+            <span className="text-black font-semibold">Fast. Reliable. Effortless.</span><br />
+            <span className="block mt-2 text-gray-700 text-lg font-normal">Experience courier booking as simple as Apple.</span>
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-            <Button className="px-8 py-4 rounded-full text-lg font-semibold bg-gray-900 text-white shadow hover:bg-gray-800 transition">
+            <Button className="px-8 py-4 rounded-full text-lg font-semibold bg-black text-white shadow hover:bg-gray-900 transition">
               Book Now
             </Button>
-            <Button variant="outline" className="px-8 py-4 rounded-full text-lg font-semibold border-gray-300 text-gray-900 hover:bg-gray-100 transition">
+            <Button variant="outline" className="px-8 py-4 rounded-full text-lg font-semibold border-gray-700 text-black hover:bg-gray-200 transition">
               Track Shipment
             </Button>
           </div>
         </div>
         <div className="absolute inset-x-0 bottom-0 flex justify-center pointer-events-none select-none">
-          <img src="/src/assets/hero-courier.jpg" alt="Courier Hero" className="w-full max-w-2xl rounded-3xl shadow-xl opacity-80" style={{objectFit: 'cover', height: '320px'}} />
+          <img src="/src/assets/hero-courier.jpg" alt="Courier Hero" className="w-full max-w-2xl rounded-3xl shadow-xl opacity-90" style={{objectFit: 'cover', height: '320px'}} />
         </div>
       </section>
       <section className="py-20 px-4 sm:px-8 lg:px-0">
