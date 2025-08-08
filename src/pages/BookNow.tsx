@@ -7,6 +7,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Checkbox } from '@/components/ui/checkbox';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Package, MapPin, Phone, Mail, Calculator } from 'lucide-react';
+import heroCourier from "@/assets/hero-courier.png";
 
 export default function BookNow() {
   const [serviceType, setServiceType] = useState('');
@@ -51,7 +52,7 @@ export default function BookNow() {
           </div>
         </div>
         <div className="absolute inset-x-0 bottom-0 flex justify-center pointer-events-none select-none">
-          <img src="/src/assets/hero-courier.jpg" alt="Courier Hero" className="w-full max-w-2xl rounded-3xl shadow-xl opacity-90" style={{objectFit: 'cover', height: '320px'}} />
+          <img src={heroCourier} alt="Courier Hero" className="w-full max-w-2xl rounded-3xl shadow-xl opacity-90" style={{objectFit: 'cover', height: '320px'}} />
         </div>
       </section>
       <section className="py-20 px-4 sm:px-8 lg:px-0">
