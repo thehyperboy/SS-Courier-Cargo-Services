@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, Package, Globe, Truck, Zap, MapPin, Clock, Users, Shield, Star, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
 import heroImage from '@/assets/hero-courier.jpg';
 
 
@@ -113,7 +114,15 @@ export default function Home() {
             <p className="mt-6 text-lg text-muted-foreground max-w-xl">
               Domestic and international courier & cargo. 24–48h express delivery, secure handling, and door‑to‑door pickup across India and abroad.
             </p>
-            <div className="mt-10 flex flex-col sm:flex-row gap-4">
+            {/* Quick quote panel (inspired by reference) */}
+            <form className="mt-8 rounded-2xl border border-border bg-card shadow-card p-2 md:p-3">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-3">
+                <Input placeholder="Pickup city or PIN" aria-label="Pickup" className="h-12" />
+                <Input placeholder="Destination city or PIN" aria-label="Destination" className="h-12" />
+                <Button type="submit" size="lg" className="h-12">Get quote</Button>
+              </div>
+            </form>
+            <div className="mt-6 flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg">
                 <Link to="/book">Book now</Link>
               </Button>
